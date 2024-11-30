@@ -1680,6 +1680,9 @@ include ph_amhari
 phonemetable ar base1
 include ph_arabic
 
+phonemetable arz base1
+include ph_egyptian_arabic
+
 phonemetable ba base1
 include ph_bashkir
 
