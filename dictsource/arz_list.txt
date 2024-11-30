@@ -1,0 +1,290 @@
+// Egyptian Arabic modifications applied based on MSA
+
+// Arabic alphabet
+_آ       'alif mamd'u:da
+_ا       'alif
+_ب       b'a:?
+_پ       p'a:?
+_ت       t'a:?
+_ث       s'a:?    // changed from "T'a:?" to "s'a:?"
+_ج       g'i:m    // changed from "dZ'i:m" to "g'i:m"
+_ح       H'a:?
+_خ       xa:?
+_د       d'a:l
+_ذ       z'a:l    // changed from "D'a:l" to "z'a:l"
+_ر       R'a.:?
+_ز       z'a:j
+_س       s'i:n
+_ش       S'i:n
+_ص       s['a.:d
+_ض       dH'a.:d
+_ط       t['a.:?
+_ظ       z'a.:?    // changed from "Z'a.:?" to "z'a.:?"
+_ع       A-a:jn
+_غ       gH:ajn   // no change for now, pronounced as "gH" but can be adjusted
+_ف       f'a:?
+_ق       ʔ'a.:f    // changed from "q'a.:f" to "ʔ'a.:f"
+_ك       k'a:f
+_گ       g'a:f
+_ل       l'a:m
+_م       m'i:m
+_ن       n'u:n
+_و       w'a:w
+_ه       h'a:?
+_ي       j'a:?
+_َ       f'atHa
+_ُ       dH'a.m:a
+_ِ       k'asRa
+_ّ       S'ad:a
+_ْ       suk'u:n   // softened sukūn
+_ً       fatHat'a:n
+_ٌ       dHa.m:at'a:n
+_ٍ       kasRat'a:n
+_،       f'a:s[-ila
+_؛       nuqt[a.||f'a:s[ila
+_ـ       tat[w'i:l
+_ئ       h'amza||A'ala:||?alj'a:?   // softened, but kept
+_ؤ       h'amza||A'ala:||?alw'a:w
+_إ       h'amza||t'aHta||?al?'alif
+_أ       h'amza||A'ala:?al?'alif
+_ء       h'amza
+_ة       t'a:?||maRb'u:t[a.
+_ى       ?'alif||maqs[-'u:Ra.
+_ةً       tan
+
+// When letters entered one by one
+آ       'alif mamd'u:da              $atend
+ا       'alif                        $atend
+ب       b'a:?                        $atend
+پ       p'a:?                        $atend
+ت       t'a:?                        $atend
+ث       s'a:?                        $atend   // changed from "T'a:?" to "s'a:?"
+ج       g'i:m                        $atend   // changed from "dZ'i:m" to "g'i:m"
+ح       H'a:?                        $atend
+خ       x'a:?                        $atend
+د       d'a:l                        $atend
+ذ       z'a:l                        $atend   // changed from "D'a:l" to "z'a:l"
+ر       Ra:?                        $atend
+ز       z'a:j                        $atend
+س       s'i:n                        $atend
+ش       S'i:n                        $atend
+ص       s['a.:d                       $atend
+ض       dH'a.:d                       $atend
+ط       t['a.:?                       $atend
+ظ       z'a.:?                        $atend   // changed from "Z'a.:?" to "z'a.:?"
+ع       A-a:jn                        $atend
+غ       gH:ajn                       $atend   // no change for now, remains "gH:ajn"
+ف       f'a:?                        $atend
+ق       ʔ'a.:f                        $atend   // changed from "q'a.:f" to "ʔ'a.:f"
+ك       k'a:f                        $atend
+گ       g'a:f                        $atend
+ل       l'a:m                        $atend
+م       m'i:m                        $atend
+ن       n'u:n                        $atend
+و       w'a:w                        $atend
+ه       h'a:?                        $atend
+ي       j'a:?                        $atend
+َ       f'atHa                      $atend
+ُ       dH'a.m:a                     $atend
+ِ       k'asRa                      $atend
+ّ       S'ad:a                      $atend
+ْ       suk'u:n                      $atend   // softened sukūn
+ً       fatHat'a:n                   $atend
+ٌ       dHa.m:at'a:n                  $atend
+ٍ       kasRat'a:n                   $atend
+،       f'a:s[-ila                   $atend
+؛       nuqt[a.||f'a:s[-ilah         $atend
+ـ       tat[w'i:l                    $atend
+ئ       h'amza||Aala:||?alj'a:?        $atend
+ؤ       h'amza||Aala:||?alw'a:w        $atend
+إ       h'amza||t'aHta||?al?'alif      $atend
+أ       h'amza||A'ala:||?al?'alif                       $atend
+ء       h'amza                      $atend
+ة       t'a:?||marb'u:t[a.            $atend
+ى       ?'alif||maqs[-'u:Rah           $atend
+ةً       tan                         $atend
+
+// -----------------------------------------------------------------
+// numeric
+_0      s[-'ifR
+_1      w'a:Hid
+_2      ?iTn'i:n
+_3      Tal'a:Ta
+_4      ?'aRbaAa
+_5      x'amsa
+_6      s'it:a
+_7      s'abA-a
+_8      Tam'a:nija
+_9      t'isA-a
+_10     'A-aSara
+_11     aHada||SaR
+_12     ?'iTn'a:||SaR
+_13     Tal'a:Tata||SaR
+_14     ?arb'aA-ata||SaR
+_15     x'amsata||SaR
+_16     s'it:ata||SaR
+_17     s'abA-ata||SaR
+_18     Tama:n'ijata||SaR
+_19     t'isA-ata||SaR
+_2X     AiSR'i:n
+_3X     Tala:T'i:n
+_4X     ?aRbaA-'i:n
+_5X     xams'i:n
+_6X     sit:'i:n
+_7X     sabA-'i:n
+_8X     Tama:n'i:n
+_9X     tisA-'i:n
+
+_0C     m'i?a
+_1C     m'i?a
+_2C     mi?at'a:n
+_3C     Tul:Tumi?a
+_4C     rub:A-umi?a
+_5C     x'umsumi?a
+_6C     s'ut:umi?a
+_7C     s'ubA-umi?a
+_8C     Tum:numi?a
+_9C     t'usA-umi?a
+
+_0M1    ?'alf
+_1M1    ?'alf
+_2M1    ?alf'a:n
+_3M1    TalaT||tala:f
+_4M1    ?aRb'aA||tala:f
+_5M1    x'ams||tala:f
+_6M1    s'it:a||tala:f
+_7M1    s'abA-a||tala:f
+_8M1    Taman||tala:f
+_9M1    t'isA||tala:f
+_10M1   A-aSaR||tala:f
+
+_0M2    m%ilj%u:n
+_1M2    m%ilju:n
+_2M2    milju:na:n
+_3M2    Tala:Tat||m%ilju:n
+_4M2    ?arba:at||m%ilju:n
+_5M2    Xamsa||m%ilju:n
+_6M2    sitta||m%ilju:n
+_7M2    sabAa||m%ilju:n
+_8M2    Tama:nija||m%ilju:n
+_9M2    tisA||m%ilju:n
+_10M2   A:Sara||m%ilju:n
+
+_0M3    milja:r
+_1M3    milja:r
+_2M3    milja:ra:n
+_3M3    Tala:Ta||milja:r
+_4M3    ?arba:a||milja:r
+_5M3    Xamsa||milja:r
+_6M3    sitta||milja:r
+_7M3    sabA:||milja:r
+_8M3    Tama:nija||milja:r
+_9M3    tisA:||milja:r
+_10M3   A:Sara||milja:r
+
+
+_0and   wa
+_dpt    fa:s[il
+_roman  ruma:ni:
+
+_#st    om
+_#nd    va
+_#rd    om
+_#th    om
+
+
+// character names
+_÷       Es:ma
+_×       fi:
+_؟       A:la:amat||?istifha:m
+_!       A:la:amat||ta:aggub
+_$       du:la:r
+_%       bilmi?ah
+_[       A:ridHah||maftu:Hah
+_]       A:ridHah||mugHlaqah
+_(       qaws||maftu:H
+_)       qaws||mugHlaq
+_*       negmah
+_-       na:qis[
+_/.      nuqt[ah
+_/:      nuqt[ata:n
+_<       ?as[gHar||min
+_=       tusa:wi:
+_>       ?akbar||min
+_{       Ha:dHinah||maftu:Hah
+_}       Ha:dHinah||mugHlaqah
+_...     Tala:T||niqa:t[
+
+
+//characters and numbers and words with English alphabet is translated by English phonemes
+th      _^_en
+
+// MAIN WORD DICTIONARY
+//*********************
+
+//abbreviations
+د       ?ad'duktu:r     $hasdot
+أنا     ?nba?ana:       $hasdot
+اه      ?intaha:        $hasdot
+ثنا     Had'daTana:     $hasdot
+الخ     ?ila||?a:_Xirih $hasdot
+إلخ     ?ila||?a:Xirih  $hasdot
+رحه     raHimahullah    $hasdot
+رضه     radHijallahu||Anhu      $hasdot
+و       wa  $pause
+إله     ?ila:h
+أولئك   ?ula:?ika
+أولو    ?ulu:
+أولي    ?uli:
+داود    da:wu:d
+ذلك     Da:lika
+التي    ?allati:
+الذي    ?allaDi:
+الذين   ?allaDi:na
+اللذين  ?allaDajn
+اللذان  ?allaDa:ni
+صلعم    s[alla:|?allahu|Alajhi||wa||sallam
+الرحمن  ?arraHma:n
+لكن     la:kin
+الله    ?alla:h
+اللهم   ?allahumma
+هؤلاء    ha:?ula:?i
+هذا     ha:Za:
+هذان    ha:Za:ni
+هذه     ha:Zihi
+//الوحدات
+كغ      kilu:||gra:m
+كجم     kilu:||gra:m
+كغم     kilu:||gra:m
+طن      t[un
+كم      ki:lu:||mitar
+سا      sa:A:
+// Units below conflict with single letter word
+// م    mitar
+// س    su?a:l
+// ج    gawa:b
+// ص    s[afHah
+د.ج     di:na:r||gaza:?irij
+$       du:la:r
+€       ?u:rru:
+£       gini:jh
+¥       juwa:n
+ج.م     gini:jh||mas[ri
+ر.س     rija:l||su:u:di:
+ابن     ?ibn
+بن      ban
+
+//foreign language
+إنجليزية                ?ingli:zijah // probelm
+جوجل            gu:gal
+غوغل            gu:gal
+(بسم الله)      bismilla:h
+
+// exceptional words with flags
+ای      ?aj     $only
+
+// exceptional words,  (out of rules)
+// proper nouns
+طه      t[a:ha:
+عمرو    A:mr
+أنا     'ana
