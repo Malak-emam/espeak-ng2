@@ -447,6 +447,7 @@ dictionaries: \
 	espeak-ng-data/am_dict \
 	espeak-ng-data/an_dict \
 	espeak-ng-data/ar_dict \
+	espeak-ng-data/arz_dict \
 	espeak-ng-data/as_dict \
 	espeak-ng-data/az_dict \
 	espeak-ng-data/ba_dict \
@@ -568,6 +569,7 @@ DICTSOURCE = \
 	$(wildcard dictsource/*_rules) \
 	$(wildcard dictsource/extra/*) \
 	dictsource/ar_listx \
+	dictsource/arz_listx \
 	dictsource/bg_listx \
 	dictsource/he_listx \
 	dictsource/ia_listx \
@@ -588,6 +590,9 @@ espeak-ng-data/an_dict: dictsource/an_list dictsource/an_rules dictsource/an_ext
 
 ar: espeak-ng-data/ar_dict
 espeak-ng-data/ar_dict: dictsource/ar_list dictsource/ar_listx dictsource/ar_rules dictsource/ar_extra dictsource/ar_emoji
+
+arz: espeak-ng-data/arz_dict
+espeak-ng-data/arz_dict: dictsource/arz_list dictsource/arz_listx dictsource/arz_rules dictsource/arz_extra dictsource/arz_emoji
 
 as: espeak-ng-data/as_dict
 espeak-ng-data/as_dict: dictsource/as_list dictsource/as_rules dictsource/as_extra
